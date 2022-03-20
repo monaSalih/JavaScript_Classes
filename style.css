@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /* justify-content: center; */
+    border: 2px solid tomato ;
+    width: fit-content;
+    height:fit-content ;
+    margin:18%;
+}
+div{
+    margin: 15%;
+}
