@@ -1,250 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-  </head>
-  <body>
-
-    <div id='outAndOver' onmouseover="mOver(this)" onmouseout="mOut(this)" 
-    style="background-color:white;width:120px;height:20px;padding:40px;">
-    Mouse Over Me</div>
-    
-    <script>
-    function mOver(Hadi) {
-      Hadi.innerHTML = "Orange academy"
-    }
-    
-    function mOut(Obada) {
-        Obada.innerHTML = "Obada"
-    }
-    </script>
-    <!-- <label>Car Types:</label>
-    <select id="carTypes" onchange="carModel()">
-      <option value="0">select</option>
-      <option value="1">Arial</option>
-      <option value="2">BMW</option>
-      <option value="3">Volvo</option>
-    </select>
-    <p id="demo">test style</p>
-    <script>
-      function carModel() {
-        var x = document.getElementById("carTypes").value;
-        if (x == "2") {
-          document.getElementById("demo").style.fontFamily =
-            "Impact,Charcoal,sans-serif";
-        } else if (x == "3") {
-          document.getElementById("demo").style.fontFamily =
-            " Inspiration, cursive";
-        } else if (x == "1") {
-          document.getElementById("demo").style.fontFamily = "Lemon, cursive";
-          document.getElementById("demo").style.fontSize = "24px";
-        }
-      }
+    <!-- <script>
+        console.log("hello world");
     </script> -->
-  </body>
-</html>
+    
+</head>
+<body>
+    <div>
+    <h1 >Hello in javascript</h1 >
+    <p id="demo">
 
-<!-- ......... Example 2 [get ID] ......... -->
-<!-- <p id="demo"></p>
-    <script>
-        document.getElementById("demo").innerHTML="Hello world!!";
-    </script> -->
-<!-- =======================================================> -->
-
-<!-- ......... Example 3 [get Class] ......... -->
-<!-- 
-   <p id="p1" class="demo">This is paragraph 1</p>
-<p>This is paragraph 2</p>
-<p class="demo">This is paragraph 3</p>
-<p>This is paragraph 4</p>
-<p class="demo">This is paragraph 5</p>|
-<a class="demo" href="#">This is Anchor tag</a>>
-<button onclick="changeColor()">Click_me</button>
-    <script>
-        function changeColor(){
-            let var1= document.getElementsByClassName('demo');
-          console.log(var1);
-          for (let x = 0; x < var1.length; x++){
-              var1[x].style.color="red";
-          } 
-        }
--->
-<!-- =======================================================> -->
-
-<!-- ......... Example 4 [Tag Name] ......... -->
-<!-- 
-      <p id="p1" class="demo">This is paragraph 1</p>
-<p>This is paragraph 2</p>
-<p class="demo">This is paragraph 3</p>
-<p>This is paragraph 4</p>
-<p class="demo">This is paragraph 5</p>|
-<a class="demo" href="#">This is Anchor tag</a>>
-<button onclick="changeColor()">Click_me</button>
-    <script>
-         function changeColor(){
-             let var1= document.getElementsByClassName('demo');
-            let var2=document.getElementsByTagName('p');
-           console.log(var1);
-           console.log(var2,"element name");
-
-           for (let x = 0; x < var1.length; x++){
-               var1[x].style.color="red";
-           }
-           var2[1].style.fontStyle = "Italic";
-           var2[1].style.color = "blue";
-         }
--->
-<!-- =======================================================> -->
-
-<!-- ......... Example 5 [querySelector] ......... -->
-<!-- 
-        <p class="intro">HI</p>
-    <p class="intro">Everyone, </p>
-    <p id="render"></p>
-    <script>
-        let x= document.querySelector('p');
-        document.getElementById('render').innerHTML= x.innerHTML +' Hala';
-    </script> 
-    -->
-<!-- =======================================================> -->
-
-<!-- ......... Example 6 [querySelectorAll] ......... -->
-<!-- 
-     <p id="p1" class="demo">This is paragraph 1</p>
-<p>This is paragraph 2</p>
-<p class="demo">This is paragraph 3</p>
-<p>This is paragraph 4</p>
-<p class="demo">This is paragraph 5</p>|
-<a class="demo" href="#">This is Anchor tag</a>>
-<button onclick="changeColor()">Click_me</button> 
-<script>
-        
-    let query_array= document.querySelectorAll('p');
-    for (let x = 0; x < query_array.length; x++) {
-        query_array[x].style.backgroundColor="#e1e2e3";
-        
-    }
- -->
-<!-- =======================================================> -->
-<!-- Example 7 [Change the HTML content] -->
-<!--
-   <h2 id="headTwo">Header two</h2>
-   <script>
-       let headElement = document.getElementById('headTwo');
-       headElement.innerHTML= 'New Head';
-   </script> 
--->
-<!-- =======================================================> -->
-<!-- Example 8 [Change the attributes] -->
-<!-- 
-   <img id="domImage" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg">
-    <button onclick="changeImage()">changeImage</button>
-    <script>
-        function changeImage() {
-           document.getElementById('domImage').src='https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80'; 
-        } 
--->
-<!-- =======================================================> -->
-<!-- Example 9 [Change the style] -->
-<!-- 
-    <p id="lorem">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab omnis rem est repellendus consequatur magnam, laborum consectetur, nam aliquam soluta odio? Adipisci fugiat soluta obcaecati inventore, nihil placeat aliquam cumque.
     </p>
-    <script>
-        document.getElementById('lorem').style.color='red';
-    </script> 
--->
-<!-- =======================================================> -->
-<!-- Example 10 [set new attribute] -->
-<!-- 
-   <img id="image">
-    <button onclick="newImage()">change</button>
-    <script>
-        function newImage() {
-            let x=  document.getElementById('image').setAttribute('src','https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80');  
-        }
-      
-    </script> 
--->
-<!-- =====================CREAT ELEMENT and append Child=======>
- <ol id="ol_element">
+    
+</div>
+</body>
+<!-- <script>
+    console.log("hello world");
+</script> -->
+<script src="app.js">
 
-  </ol>
-
-    <script>
-        
-        let orderList=document.getElementById("ol_element");
-        let liItem1=document.createElement('li');
-        orderList.appendChild(liItem1);
-        liItem1.textContent="Tea";
-
-        ///item2
-        let liItem2=document.createElement('li');
-        orderList.appendChild(liItem2);
-        liItem2.textContent="water";
-
-        ///item3
-        let liItem3=document.createElement('li');
-        orderList.appendChild(liItem3);
-        liItem3.textContent="Orange juice";
-
--->
-<!-- =======================================================> -->
-<!-- Example 10 [onClick event] -->
-<!-- 
-    <button id="changeColor">change my color on click </button>
-    <script>
-       document.getElementById('changeColor').setAttribute('onclick','changing()');
-       function changing(){
-           document.getElementById('changeColor').style.backgroundColor='red';
-       } 
--->
-<!-- <h2 onclick="this.style.color='red'">Click on this text!</h2> -->
-<!-- =======================================================> -->
-<!-- Example 11 [onChange event] -->
-<!--
-<select id="carTypes" onchange="carModel()">
-      <option value="0">select</option>
-      <option value="1">Arial</option>
-      <option value="2">BMW</option>
-      <option value="3">Volvo</option>
-    </select>
-    <p id="demo">test style</p>
-    <script>
-      function FontModel() {
-        var x = document.getElementById("carTypes").value;
-        if (x == "2") {
-          document.getElementById("demo").style.fontFamily =
-            "Impact,Charcoal,sans-serif";
-        } else if (x == "3") {
-          document.getElementById("demo").style.fontFamily =
-            " Inspiration, cursive";
-        } else if (x == "1") {
-          document.getElementById("demo").style.fontFamily = "Lemon, cursive";
-          document.getElementById("demo").style.fontSize = "24px";
-        }
-      }
-    </script>
--->
-<!-- =======================================================> -->
-<!-- Example 12 [onChange event] -->
-<!-- 
-    <div id='outAndOver' onmouseover="mOver()" onmouseout="mOut()" 
-style="background-color:red;width:120px;height:20px;padding:40px;">
-Mouse Over Me</div>
-
-<script>
-function mOver() {
-  document.getElementById('outAndOver').innerHTML = "Mouse Over"
-}
-
-function mOut() {
- document.getElementById('outAndOver').innerHTML = "Mouse Out "
-}
-</script> 
--->
+</script>
+</html>
