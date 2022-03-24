@@ -119,3 +119,8 @@ if(number1>number2){
     console.log(number2+"grater than" +number1);
 
 }
+
+
+function name(params) {
+    
+}
