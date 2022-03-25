@@ -10,7 +10,7 @@
   </head>
   <body>
 
-    <div id='outAndOver' onmouseover="mOver(this)" onmouseout="mOut(this)" 
+    <div id='outAndOver' onmouseover="mOver(this)" onmouseout="mOut()" 
     style="background-color:white;width:120px;height:20px;padding:40px;">
     Mouse Over Me</div>
     
@@ -19,8 +19,8 @@
       Hadi.innerHTML = "Orange academy"
     }
     
-    function mOut(Obada) {
-        Obada.innerHTML = "Obada"
+    function mOut() {
+    document.getElementById("outAndOver").innerHTML = "Obada"
     }
     </script>
     <!-- <label>Car Types:</label>
