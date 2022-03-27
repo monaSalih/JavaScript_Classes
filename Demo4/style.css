@@ -1,0 +1,9 @@
+body{
+    background-image: url("https://www.mikocoffee.com/hu/wp-content/uploads/sites/81/2015/03/coffee-pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+    background-color: beige;
+}
