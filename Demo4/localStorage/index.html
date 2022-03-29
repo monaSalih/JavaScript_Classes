@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <main>
+       <form id="orderForm">
+           <fieldset>
+               <legend>Coffe Form</legend>
+               <label >First name</label>
+               <input type="text" name="cusName"> 
+                              
+               <label >Size:</label>
+               <select name="cupSize" >
+                   <option value="6">6 oz</option>
+                   <option value="12">12 oz</option>
+                   <option value="16">16 oz</option>
+                   <option value="12">20 oz</option>
+                   <option value="16">32 oz</option>
+               </select>
+
+               <label >Milk</label>
+               <select name="milkType" >
+                   <option value="regular">Regular</option>
+                   <option value="almond">Almond</option>
+                   <option value="coconut">Coconut oz</option>
+                   <option value="none">None</option>
+               </select>
+
+               <label>Hot:</label>
+               <input type="checkbox" name="isHot" id="">
+               <!-- <label>Hadi test:</label>
+
+               <input type="checkbox" name="isHot2" id="">
+                <input type="checkbox" name="isHot3" id="">
+               <input type="checkbox" name="isHot4" id=""> -->
+
+               <label >Drink</label>
+               <select name="drinkType" >
+                   <option value="latte">Latte</option>
+                   <option value="blackCoffe">Black Coffe</option>
+                   <option value="coconut">Coconut oz</option>
+                   <option value="coldBrew">Cold Brew</option>
+               </select>
+
+               <button type="submit">Submit</button>
+           </fieldset>
+       </form>
+       <section>
+           <h3>
+               previous Orders </h3>
+
+               <ul id="order">
+
+               </ul>
+               <hr>
+               <ul id="session">
+
+            </ul>
+       </section>
+   </main> 
+</body>
+<script src="app.js"></script>
+</html>
